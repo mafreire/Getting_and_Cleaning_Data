@@ -13,7 +13,6 @@
 run_analysis  <- function(){
         library(dplyr)
         library(plyr)
-        library(dplyr)
         
         ## Check if the directory "data" exists if it does not exist it is created
         if(!file.exists("./data")){ 
@@ -22,7 +21,13 @@ run_analysis  <- function(){
         
         ##download the raw data
         fileUrl  <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-        download.file(fileUrl, destfile ="./data/Dataset.zip", method = "curl")
+        
+        os <- Sys.info()['sysname']
+        
+        if (!os %in% "Windows") 
+                download.file(fileUrl, destfile ="./data/Dataset.zip", method = "curl")
+        else 
+                download.file(fileUrl, destfile ="./data/Dataset.zip")
         
         ##unzip Dataset.zip file
         unzip ("./data/Dataset.zip", exdir = "./data")

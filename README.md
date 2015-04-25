@@ -59,10 +59,10 @@ A description of these row data files is provided in my CodeBook.md file placed 
 
 ##Running the script - Instructions list
 1. Step 1 - Clone this repo to your local machine
-
 2. Step 2 - Open the RStudio and setup the correct working directory accordingly
 3. Step 3 - Run the script: 
 
+  1. install.packages("plyr"); install.packages("dplyr")
   1. source("run\_analysis.R")
   2. run\_analysis() 
  
