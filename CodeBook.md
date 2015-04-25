@@ -93,7 +93,7 @@ At this point the data set contains 10299 different observations (rows), 68 vari
 2      2   STANDING       0.2860267       -0.01316336       -0.11908252
 3      2   STANDING       0.2754848       -0.02605042       -0.11815167
 4      2   STANDING       0.2702982       -0.03261387       -0.11752018
-5      2   STANDING       0.2748330       -0.02784779	      -0.12952716
+5      2   STANDING       0.2748330       -0.02784779	    -0.12952716
 6      2   STANDING       0.2792199       -0.01862040       -0.11390197
 ```
 - It was created a second, independent tidy data frame with the calculated average of each variable for each activity and each subject.
@@ -102,7 +102,7 @@ This data frame name is tidy\_data, contains 180 rows (30 subjects x 6 activitie
  >tidy_data[1:6,1:4]
 
   Subject              Activity     tBodyAcc-mean()-X  tBodyAcc-mean()-Y
-1       1 	            WALKING 	           0.2773308       -0.017383819
+1       1 	            WALKING             0.2773308       -0.017383819
 2       1      WALKING_UPSTAIRS             0.2554617       -0.023953149
 3       1    WALKING_DOWNSTAIRS             0.2891883       -0.009918505
 4       1               SITTING             0.2612376       -0.001308288
