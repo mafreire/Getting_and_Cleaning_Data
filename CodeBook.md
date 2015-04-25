@@ -102,7 +102,7 @@ This data frame name is tidy\_data, contains 180 rows (30 subjects x 6 activitie
  >tidy_data[1:6,1:4]
 
   Subject              Activity     tBodyAcc-mean()-X  tBodyAcc-mean()-Y
-1       1 	        WALKING 	    0.2773308       -0.017383819
+1       1 	             WALKING 	           0.2773308       -0.017383819
 2       1      WALKING_UPSTAIRS             0.2554617       -0.023953149
 3       1    WALKING_DOWNSTAIRS             0.2891883       -0.009918505
 4       1               SITTING             0.2612376       -0.001308288
